@@ -79,37 +79,30 @@ namespace tic_tac_toe
 
         private void Check()
         {
-            if (button1.Text == "x" && button2.Text == "x" && button3.Text == "x"
-                || button4.Text == "x" && button5.Text == "x" && button6.Text == "x"
-                || button7.Text == "x" && button8.Text == "x" && button9.Text == "x"
-                || button1.Text == "x" && button5.Text == "x" && button9.Text == "x"
-                || button1.Text == "x" && button4.Text == "x" && button7.Text == "x"
-                || button2.Text == "x" && button5.Text == "x" && button8.Text == "x"
-                || button3.Text == "x" && button5.Text == "x" && button7.Text == "x"
-                || button3.Text == "x" && button6.Text == "x" && button9.Text == "x")
+            if (button1.Text == currentplayer.ToString() && button2.Text == currentplayer.ToString() && button3.Text == currentplayer.ToString()
+                || button4.Text == currentplayer.ToString() && button5.Text == currentplayer.ToString() && button6.Text == currentplayer.ToString()
+                || button7.Text == currentplayer.ToString() && button8.Text == currentplayer.ToString() && button9.Text == currentplayer.ToString()
+                || button1.Text == currentplayer.ToString() && button5.Text == currentplayer.ToString() && button9.Text == currentplayer.ToString()
+                || button1.Text == currentplayer.ToString() && button4.Text == currentplayer.ToString() && button7.Text == currentplayer.ToString()
+                || button2.Text == currentplayer.ToString() && button5.Text == currentplayer.ToString() && button8.Text == currentplayer.ToString()
+                || button3.Text == currentplayer.ToString() && button5.Text == currentplayer.ToString() && button7.Text == currentplayer.ToString()
+                || button3.Text == currentplayer.ToString() && button6.Text == currentplayer.ToString() && button9.Text == currentplayer.ToString())
             {
                 AImoves.Stop();
-                MessageBox.Show("Player Wins");
-                playerWins++;
-                label1.Text = "Player Wins - " + playerWins;
 
-                resetGame();
-            }
-            else if (button1.Text == "o" && button2.Text == "o" && button3.Text == "o"
-                || button4.Text == "o" && button5.Text == "o" && button6.Text == "o"
-                || button7.Text == "o" && button8.Text == "o" && button9.Text == "o"
-                || button1.Text == "o" && button5.Text == "o" && button9.Text == "o"
-                || button1.Text == "o" && button4.Text == "o" && button7.Text == "o"
-                || button2.Text == "o" && button5.Text == "o" && button8.Text == "o"
-                || button3.Text == "o" && button5.Text == "o" && button7.Text == "o"
-                || button3.Text == "o" && button6.Text == "o" && button9.Text == "o")
-            {
-                AImoves.Stop();
-                MessageBox.Show("Computer Wins");
-                cpuWins++;
-                label2.Text = "CPU Wins - " + cpuWins;
-
-                resetGame();
+                if (currentplayer.ToString() == "x")
+                {
+                    MessageBox.Show("Player Wins");
+                    playerWins++;
+                    label1.Text = "Player Wins - " + playerWins;
+                }
+                else if (currentplayer.ToString() == "o")
+                {
+                    MessageBox.Show("Computer Wins");
+                    cpuWins++;
+                    label2.Text = "CPU Wins - " + cpuWins;
+                }
+                resetGame();                
             }
             else if (buttons.Count == 0)
             {
@@ -118,8 +111,7 @@ namespace tic_tac_toe
 
                 resetGame();
             }
-                
-        }
 
-    }
+        }            
+    }                
 }
