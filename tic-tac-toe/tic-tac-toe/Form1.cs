@@ -88,7 +88,10 @@ namespace tic_tac_toe
                 || button4.Text == "x" && button5.Text == "x" && button6.Text == "x"
                 || button7.Text == "x" && button8.Text == "x" && button9.Text == "x"
                 || button1.Text == "x" && button5.Text == "x" && button9.Text == "x"
-                || button1.Text == "x" && button4.Text == "x" && button7.Text == "x")
+                || button1.Text == "x" && button4.Text == "x" && button7.Text == "x"
+                || button2.Text == "x" && button5.Text == "x" && button8.Text == "x"
+                || button3.Text == "x" && button5.Text == "x" && button7.Text == "x"
+                || button3.Text == "x" && button6.Text == "x" && button9.Text == "x")
             {
                 AImoves.Stop();
                 MessageBox.Show("Player Wins");
@@ -101,7 +104,10 @@ namespace tic_tac_toe
                 || button4.Text == "o" && button5.Text == "o" && button6.Text == "o"
                 || button7.Text == "o" && button8.Text == "o" && button9.Text == "o"
                 || button1.Text == "o" && button5.Text == "o" && button9.Text == "o"
-                || button1.Text == "o" && button4.Text == "o" && button7.Text == "o")
+                || button1.Text == "o" && button4.Text == "o" && button7.Text == "o"
+                || button2.Text == "o" && button5.Text == "o" && button8.Text == "o"
+                || button3.Text == "o" && button5.Text == "o" && button7.Text == "o"
+                || button3.Text == "o" && button6.Text == "o" && button9.Text == "o")
             {
                 AImoves.Stop();
                 MessageBox.Show("Computer Wins");
