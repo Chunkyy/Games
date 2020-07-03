@@ -116,6 +116,13 @@ namespace tic_tac_toe
 
                 resetGame();
             }
+            else if (buttons.Count == 0)
+            {
+                AImoves.Stop();
+                MessageBox.Show("Draw");
+
+                resetGame();
+            }
                 
         }
 
