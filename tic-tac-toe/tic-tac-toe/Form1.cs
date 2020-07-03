@@ -36,7 +36,7 @@ namespace tic_tac_toe
             currentplayer = Player.x;
             button.Text = currentplayer.ToString();
             button.Enabled = false;
-            button.BackColor = System.Drawing.Color.Cyan;
+            button.BackColor = Color.Cyan;
             buttons.Remove(button);
             Check();
             AImoves.Start();
@@ -50,8 +50,9 @@ namespace tic_tac_toe
                 buttons[index].Enabled = false;
                 currentplayer = Player.o;
                 buttons[index].Text = currentplayer.ToString();
-                buttons[index].BackColor = System.Drawing.Color.DarkSalmon;
+                buttons[index].BackColor = Color.DarkSalmon;
                 buttons.RemoveAt(index);
+                Check();
                 AImoves.Stop();
             }
         }
