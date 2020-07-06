@@ -27,14 +27,21 @@ namespace tic_tac_toe
 
         private void playerClick(object sender, EventArgs e)
         {
-            var button = (Button)sender;
-            currentplayer = Player.x;
-            button.Text = currentplayer.ToString();
-            button.Enabled = false;
-            button.BackColor = Color.Cyan;
-            buttons.Remove(button);
-            Check();
-            AImoves.Start();
+            if (AImoves.Enabled)
+            {
+                MessageBox.Show("It is not your turn");
+            }
+            else
+            {
+                var button = (Button)sender;
+                currentplayer = Player.x;
+                button.Text = currentplayer.ToString();
+                button.Enabled = false;
+                button.BackColor = Color.Cyan;
+                buttons.Remove(button);
+                Check();
+                AImoves.Start();
+            }                      
         }
 
         private void AImove(object sender, EventArgs e)
