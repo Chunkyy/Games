@@ -18,6 +18,7 @@ namespace tic_tac_toe
         Random rand = new Random();
         int playerWins = 0;
         int cpuWins = 0;
+        int draw = 0;
 
         public Form1()
         {
@@ -115,6 +116,8 @@ namespace tic_tac_toe
             {
                 AImoves.Stop();
                 MessageBox.Show("Draw");
+                draw++;
+                label3.Text = "Draw - " + draw;
 
                 resetGame();
             }
