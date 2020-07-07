@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace tic_tac_toe
+namespace BattleShips
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace tic_tac_toe
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Tic_Tac_Toe());
+            Application.Run(new Form1());
         }
     }
 }
