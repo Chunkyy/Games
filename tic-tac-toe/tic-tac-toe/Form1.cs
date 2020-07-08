@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
+
+
+
+
+
 namespace tic_tac_toe
 {
     public partial class Form1 : Form
@@ -122,6 +127,11 @@ namespace tic_tac_toe
                 resetGame();
             }
 
-        }            
+        }
+
+        private void closeTicTacToe_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }                
 }
