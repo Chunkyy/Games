@@ -21,8 +21,7 @@ namespace Game_Selection
         private void tictactoe_Click(object sender, EventArgs e)
         {
             tic_tac_toe.Form1 ttt = new tic_tac_toe.Form1();
-            Show();
-                       
+            ttt.Show();        
         }
     }
 }
