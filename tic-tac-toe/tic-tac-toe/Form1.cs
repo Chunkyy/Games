@@ -29,6 +29,7 @@ namespace tic_tac_toe
         {
             InitializeComponent();
             resetGame();
+            ControlBox = false;
         }
 
         private void playerClick(object sender, EventArgs e)
