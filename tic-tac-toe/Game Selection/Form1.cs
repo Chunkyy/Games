@@ -17,11 +17,18 @@ namespace Game_Selection
         {
             InitializeComponent();
         }
-
+        tic_tac_toe.Form1 ttt = new tic_tac_toe.Form1();
         private void tictactoe_Click(object sender, EventArgs e)
         {
-            tic_tac_toe.Form1 ttt = new tic_tac_toe.Form1();
-            ttt.Show();        
+            
+            if (ttt.Visible == true)
+            {
+                ttt.BringToFront();
+            }
+            else
+            {
+                ttt.Show();
+            }
         }
     }
 }
