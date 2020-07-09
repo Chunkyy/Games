@@ -1,6 +1,6 @@
 ﻿namespace tic_tac_toe
 {
-    partial class Form1
+    partial class Tic_Tac_Toe
     {
         /// <summary>
         /// Required designer variable.

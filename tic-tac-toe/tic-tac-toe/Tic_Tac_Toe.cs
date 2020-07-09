@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace tic_tac_toe
 {
-    public partial class Form1 : Form
+    public partial class Tic_Tac_Toe : Form
     {
         public enum Player
         {
@@ -25,7 +25,7 @@ namespace tic_tac_toe
         int cpuWins = 0;
         int draw = 0;
 
-        public Form1()
+        public Tic_Tac_Toe()
         {
             InitializeComponent();
             resetGame();

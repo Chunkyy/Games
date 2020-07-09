@@ -5,6 +5,7 @@ VisualStudioVersion = 15.0.28307.1169
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tic-tac-toe", "tic-tac-toe\tic-tac-toe.csproj", "{EDB78A49-5482-4405-A1F9-474278CB44F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleShips", "BattleShips\BattleShips.csproj", "{7739AB02-CECC-4E89-8CE7-5396FA9D255C}"
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game Selection", "Game Selection\Game Selection.csproj", "{FF9A927C-833F-4BFE-8A98-CFCDADB54218}"
 EndProject
 Global
@@ -17,6 +18,10 @@ Global
 		{EDB78A49-5482-4405-A1F9-474278CB44F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDB78A49-5482-4405-A1F9-474278CB44F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDB78A49-5482-4405-A1F9-474278CB44F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7739AB02-CECC-4E89-8CE7-5396FA9D255C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7739AB02-CECC-4E89-8CE7-5396FA9D255C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7739AB02-CECC-4E89-8CE7-5396FA9D255C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7739AB02-CECC-4E89-8CE7-5396FA9D255C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FF9A927C-833F-4BFE-8A98-CFCDADB54218}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FF9A927C-833F-4BFE-8A98-CFCDADB54218}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF9A927C-833F-4BFE-8A98-CFCDADB54218}.Release|Any CPU.ActiveCfg = Release|Any CPU

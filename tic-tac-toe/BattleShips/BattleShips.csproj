@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FF9A927C-833F-4BFE-8A98-CFCDADB54218}</ProjectGuid>
+    <ProjectGuid>{7739AB02-CECC-4E89-8CE7-5396FA9D255C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Game_Selection</RootNamespace>
-    <AssemblyName>Game Selection</AssemblyName>
+    <RootNamespace>BattleShips</RootNamespace>
+    <AssemblyName>BattleShips</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -80,10 +81,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\tic-tac-toe\tic-tac-toe.csproj">
-      <Project>{edb78a49-5482-4405-a1f9-474278cb44f0}</Project>
-      <Name>tic-tac-toe</Name>
-    </ProjectReference>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fireIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\missIcon.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
