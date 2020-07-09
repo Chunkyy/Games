@@ -12,7 +12,7 @@ using System.Diagnostics;
 
 namespace BattleShips
 {
-    public partial class Form1 : Form
+    public partial class Battle_Ships : Form
     {
         List<Button> playerPosition;
         List<Button> enemyPosition;
@@ -23,7 +23,7 @@ namespace BattleShips
         int playerTotalScore = 0;
         int enemyTotalScore = 0;
 
-        public Form1()
+        public Battle_Ships()
         {
             InitializeComponent();
             loadbuttons();

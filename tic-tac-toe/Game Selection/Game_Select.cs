@@ -17,10 +17,10 @@ namespace Game_Selection
         {
             InitializeComponent();
         }
-        tic_tac_toe.Form1 ttt = new tic_tac_toe.Form1();
+        
         private void tictactoe_Click(object sender, EventArgs e)
         {
-            
+            tic_tac_toe.Tic_Tac_Toe ttt = new tic_tac_toe.Tic_Tac_Toe();
             if (ttt.Visible == true)
             {
                 ttt.BringToFront();
