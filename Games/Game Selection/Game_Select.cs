@@ -1,0 +1,34 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using tic_tac_toe;
+
+namespace Game_Selection
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+        
+        private void tictactoe_Click(object sender, EventArgs e)
+        {
+            tic_tac_toe.Tic_Tac_Toe ttt = new tic_tac_toe.Tic_Tac_Toe();
+            if (ttt.Visible == true)
+            {
+                ttt.BringToFront();
+            }
+            else
+            {
+                ttt.Show();
+            }
+        }
+    }
+}
